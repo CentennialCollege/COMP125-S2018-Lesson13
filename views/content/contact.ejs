@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-  </head>
-  <body>
+<%- include ../partials/header.ejs %>
+
+ <div class="container">
     <h1><%= title %></h1>
     <h2>Authors:</h2>
     <ul>
@@ -13,5 +9,6 @@
       <% } %>
 
     </ul>
-  </body>
-</html>
+  </div>
+
+<%- include ../partials/footer.ejs %>

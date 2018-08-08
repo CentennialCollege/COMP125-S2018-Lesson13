@@ -3,14 +3,15 @@ let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { 
+  res.render('content/index', { 
     title: 'Express Demo' 
   });
 });
 
+
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { 
+  res.render('content/about', { 
     title: 'About Express',
     author: 'Tom Tsiliopoulos'
  });
@@ -18,7 +19,7 @@ router.get('/about', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { 
+  res.render('content/contact', { 
     title: 'Contact Me',
     authors: ['Tom', 'Mark', 'Luke', 'Jaden', 'John']
  });
